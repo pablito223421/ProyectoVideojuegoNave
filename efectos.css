@@ -1,0 +1,95 @@
+body
+{
+width:100%;
+margin:0 ;
+padding:0px;
+background: url(Imagenesjuego/imagenespacial.jpg) no-repeat; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-ms-background-size: cover;
+}
+
+#reglanaves{
+   font-family: Arial ; 
+  font-weight: normal;
+  color: white;
+  padding: 2px; 
+  text-shadow: 5px white;
+}
+
+#titulo{
+text-align: center; 
+font-family: Arial Black; 
+font-weight: bold; 
+font-size: 30px; 
+color: #fff; 
+text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+#area-del-juego{
+  width: 500px;
+  height: 500px;
+  background-image: url('Imagenesjuego/escenario.jpg');
+
+}
+
+#reglas-del-juego {
+  position: relative;
+  color: white;
+  left: 25px;
+  top: 0px;
+  text-shadow: 5px white;
+}
+
+#boton-start{
+  position: relative;
+  color: white;
+    left: 25px;
+  top: 0px;
+  text-shadow: 5px white;
+}
+}
+
+#boton-start:hover {
+  cursor: pointer;
+}
+
+#jugador {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 20px;
+  top: 180px;
+}
+
+.disparos {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.naves {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+       0 0 6px 3px #fff,
+       0 0 5px 6px #f0f,
+       0 0 9px 9px #0ff;
+}
+
+.transicion-naves {
+  opacity: 1;
+  transition: opacity 1.5s ease-out;
+}
+
+
+.naves-destruidas {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  opacity: 0;
+}
